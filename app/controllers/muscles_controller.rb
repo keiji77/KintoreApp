@@ -37,5 +37,6 @@ class MusclesController < ApplicationController
     def muscle_params
       params.require(:muscle).permit(:day, :menu, :load)
     end
-
 end
+
+#day: muscle_params[:day], menu: muscle_params[:menu], load: muscle_params[:load], user_id: current_user.id
