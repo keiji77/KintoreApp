@@ -10,6 +10,6 @@
   <label><%= f.radio_button :menu, "腹筋" %>腹筋</label>
   <label><%= f.radio_button :menu, "スクワット" %>スクワット</label>
 
-<p>負荷の度合い: <%= f.text_field :load %></p>
+<p>メモ: <%= f.text_field :load %></p>
   <%= f.submit "保存する" %>　<%= link_to "筋トレトップへ戻る", muscles_path , class: "btn btn-outline-primary" %>
 <% end %>
