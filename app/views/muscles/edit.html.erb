@@ -11,5 +11,6 @@
   <label><%= f.radio_button :menu, "スクワット" %>スクワット</label>
 
 <p>メモ: <%= f.text_field :load %></p>
-  <%= f.submit "再保存する" %>　<%= link_to "筋トレトップへ戻る", muscles_path , class: "btn btn-outline-primary" %>
+  <%= f.submit "再保存する", class: "btn btn-outline-primary" %></br>
+  <%= link_to "筋トレトップへ戻る", muscles_path , class: "btn btn-outline-primary" %>
 <% end %>

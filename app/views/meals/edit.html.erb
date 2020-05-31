@@ -8,5 +8,6 @@
   <p>食事内容<%= f.text_field :meal_content %></p>
   <p>タンパク質量: <%= f.text_field :protein %>g</p>
 
-  <%= f.submit "再保存する" %>　<%= link_to "食事管理トップへ戻る", meals_path , class: "btn btn-outline-primary" %>
+  <%= f.submit "再保存する", class: "btn btn-outline-primary" %></br>
+  <%= link_to "食事管理トップへ戻る", meals_path , class: "btn btn-outline-primary" %>
 <% end %>

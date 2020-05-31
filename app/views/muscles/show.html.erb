@@ -1,7 +1,9 @@
 <h1>過去の記録</h1>
 <% @muscles.each do |muscle| %>
-  <p><%= muscle.day %>:<%= muscle.menu %>:<%= muscle.load %></p>
-<% end %>
+  <p><%= muscle.day %>:<%= muscle.menu %>:<%= muscle.load %></p></br>
+  <%= link_to "上記の編集", edit_muscle_path(muscle), method: :get, class: "btn btn-outline-primary" %>
+  <%= link_to "上記の削除", muscle_path(muscle), method: :delete, data: {confirm: "削除しますか?"}, class: "btn btn-outline-primary" %>
+<% end %></br>
 
 
-<%= link_to "筋トレトップへ", muscles_path %>
+<%= link_to "筋トレトップへ", muscles_path, class: "btn btn-outline-primary" %>
