@@ -1,0 +1,7 @@
+<h1>過去の記録</h1>
+<% @muscles.each do |muscle| %>
+  <p><%= muscle.day %>:<%= muscle.menu %>:<%= muscle.load %></p>
+<% end %>
+
+
+<%= link_to "筋トレトップへ", muscles_path %>

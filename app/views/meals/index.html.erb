@@ -1,0 +1,4 @@
+<h1>食事管理</h1>
+<%= link_to "記録する", new_meal_path , class: "btn btn-outline-primary" %>
+<%= link_to "過去の記録", meal_path(current_user.id), class: "btn btn-outline-secondary" %>
+

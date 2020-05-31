@@ -1,0 +1,15 @@
+<%= form_with model: @muscle, local: true do |f| %>
+<p>日付</p>
+  <%=   f.date_select(
+               :day,
+                use_month_numbers:true,
+                )
+  %>
+<p>メニュー</p>
+  <label><%= f.radio_button :menu, "腕立て伏せ" %>腕立て伏せ</label>
+  <label><%= f.radio_button :menu, "腹筋" %>腹筋</label>
+  <label><%= f.radio_button :menu, "スクワット" %>スクワット</label>
+
+<p>負荷の度合い: <%= f.text_field :load %></p>
+  <%= f.submit "保存する" %>　<%= link_to "筋トレトップへ戻る", muscles_path , class: "btn btn-outline-primary" %>
+<% end %>

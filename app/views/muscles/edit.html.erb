@@ -1,0 +1,18 @@
+<%= form_with model: @muscle, local: true do |f| %>
+<p>日付</p>
+  <%=   f.date_select(
+               :day,
+                use_month_numbers:true,
+                discard_year:true)
+  %>
+<p>メニュー</p>
+  <label><%= f.radio_button :menu, "腕立て伏せ" %>腕立て伏せ</label>
+  <label><%= f.radio_button :menu, "腹筋" %>腹筋</label>
+  <label><%= f.radio_button :menu, "スクワット" %>スクワット</label>
+
+<p>負荷の度合い</p>
+  <label><%= f.radio_button :menu, "大" %>大</label>
+  <label><%= f.radio_button :menu, "中" %>中</label>
+  <label><%= f.radio_button :menu, "小" %>小</label>
+  <%= f.submit "再保存する" %>
+<% end %>

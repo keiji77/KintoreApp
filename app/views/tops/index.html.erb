@@ -1,0 +1,7 @@
+<h2>ーー筋トレをもう一歩先へーー</h2>
+  <% if user_signed_in? %>
+    <%= link_to "トレーニング", muscles_path , class: "btn btn-outline-primary" %>
+    <%= link_to "食事管理", meals_path, class: "btn btn-outline-secondary" %>
+  <% else %>
+    <p>ログインしてください</p>
+  <% end %>
