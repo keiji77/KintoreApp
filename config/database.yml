@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: kintore_app_production
-  username: kintore_app
-  password: <%= ENV['KINTORE_APP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
